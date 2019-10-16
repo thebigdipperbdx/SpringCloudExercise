@@ -26,8 +26,13 @@ public class ServiceHelloApplication {
     String port;
 
     @RequestMapping("/hello")
-    public String home(@RequestParam(value = "name", defaultValue = "Jing Tianming") String name) {
+    public String sayHello(@RequestParam(value = "name", defaultValue = "Jing Tianming") String name) {
         return "hi " + name + " ,i am from port:" + port;
+    }
+
+    @RequestMapping("/fine")
+    public String sayFine(@RequestParam(value = "name", defaultValue = "Jing Tianming") String name) {
+        return "hi " + name + " , i am fine , i am from port:" + port;
     }
 
 }

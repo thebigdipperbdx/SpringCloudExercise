@@ -12,6 +12,7 @@
     <groupId>com.example</groupId>
     <artifactId>springclouddemo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
 
     <name>springclouddemo</name>
@@ -51,6 +52,7 @@
     </dependencyManagement>
 
     <build>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
